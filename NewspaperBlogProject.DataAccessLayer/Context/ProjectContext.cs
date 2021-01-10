@@ -1,4 +1,5 @@
 ﻿using NewspaperBlogProject.EntityLayer.Entities.Concrete;
+using NewspaperBlogProject.MapLayer.Maping;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace NewspaperBlogProject.DataAccessLayer.Context
 {
-    class ProjectContext : DbContext  //
+    class ProjectContext : DbContext  
     {
         public ProjectContext()
         {
-            Database.Connection.ConnectionString = @"DESKTOP-C5K6QDU\SQLEXPRESS;Database=NewspaperBlogProject;Integrated Security=True;";
+            Database.Connection.ConnectionString = @"Server=DESKTOP-C5K6QDU;Database=NewspaperBlogProject;Integrated Security=True;";
         }
 
         public DbSet<Category> Categories { get; set; }

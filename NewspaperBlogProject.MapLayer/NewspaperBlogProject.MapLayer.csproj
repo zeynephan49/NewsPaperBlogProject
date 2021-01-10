@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Maping\AppUserMap.cs" />
+    <Compile Include="Maping\BaseMap.cs" />
+    <Compile Include="Maping\CategoryMap.cs" />
+    <Compile Include="Maping\CommentMap.cs" />
+    <Compile Include="Maping\LikeMap.cs" />
+    <Compile Include="Maping\PostMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
